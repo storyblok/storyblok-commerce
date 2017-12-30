@@ -1,6 +1,6 @@
 {
   "name": "storyblok-commerce",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Storyblok Commerce",
   "main": "commerce/index.js",
   "scripts": {
