@@ -1,0 +1,31 @@
+.sb-filter-bar {
+
+}
+
+.sb-filter-bar__headline {
+  text-transform: uppercase;
+  line-height: 1;
+  font-size: 26px;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.sb-filter-bar__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sb-filter-bar__reset {
+  a {
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    font-weight: 600;
+    display: block;
+  }
+
+  border-bottom: 1px solid #000;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}

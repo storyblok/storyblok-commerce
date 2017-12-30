@@ -1,0 +1,74 @@
+$sb-form-padding-horizontal: 10px;
+$sb-form-background: #FFF;
+$sb-form-color: #000;
+$sb-form-height: 40px;
+$sb-form-border-color: #000;
+
+.sb-form {
+
+}
+
+.sb-form__input,
+.sb-form__select,
+.sb-form__textarea,
+.sb-form__radio,
+.sb-form__checkbox {
+  box-sizing: border-box;
+  margin: 0;
+  border-radius: 0;
+  font: inherit;
+}
+
+.sb-form__radio,
+.sb-form__checkbox {
+  padding: 0;
+}
+
+.sb-form__input,
+.sb-form__textarea {
+  -webkit-appearance: none;
+}
+
+.sb-form__input,
+.sb-form__select,
+.sb-form__textarea {
+  max-width: 100%;
+  width: 100%;
+  border: 1px solid $sb-form-border-color;
+  padding: 0 $sb-form-padding-horizontal;
+  background: $sb-form-background;
+  color: $sb-form-color;
+}
+
+.sb-form__input,
+.sb-form__select:not([multiple]):not([size]) {
+  height: $sb-form-height;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.sb-form__select:not([multiple]):not([size]) {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-right: 30px;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2224%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22#000%22%20points%3D%2212%201%209%206%2015%206%22%3E%3C%2Fpolygon%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22#000%22%20points%3D%2212%2013%209%208%2015%208%22%3E%3C%2Fpolygon%3E%0A%3C%2Fsvg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+}
+
+.sb-form__select:not([multiple]):not([size])::-ms-expand {
+  display: none;
+}
+
+.sb-form__row {
+  margin-bottom: 1rem;
+}
+
+.sb-form__label {
+  display: block;
+  padding-bottom: 5px;
+}
+
+.sb-form__radio-label {
+  padding-right: 15px;
+}

@@ -1,0 +1,55 @@
+.sb-tree-item__headline {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 5px 20px 5px 0;
+  margin: 0;
+  transition: color 0.25s ease;
+
+  .uk-icon {
+    display: none;
+  }
+}
+
+.sb-tree-item__link {
+  position: relative;
+  display: block;
+
+  .uk-icon {
+    position: absolute;
+    right: -20px;
+    bottom: 0;
+
+    svg > * {
+      stroke-width: 2px !important;
+    }
+  }
+
+  &:hover, &:focus {
+    text-decoration: none;
+  }
+}
+
+.sb-tree-item__headline-count {
+  font-weight: 300;
+}
+
+.sb-tree-item__list .sb-tree-item--has-childs .uk-icon,
+.sb-tree-item--root .sb-tree-item--has-childs .uk-icon {
+  display: block;
+}
+
+.sb-tree-item__list {
+  list-style-type: none;
+  padding-left: 12px;
+  margin: 10px 0;
+
+  li {
+    line-height: 1.2;
+  }
+
+  .sb-tree-item__headline {
+    text-transform: none;
+  }
+}

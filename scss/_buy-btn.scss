@@ -1,0 +1,23 @@
+.sb-buy-btn__loading {
+  display: none;
+}
+
+.sb-buy-btn--loading {
+  .sb-buy-btn__loading {
+    display: block;
+  }
+
+  .sb-buy-btn__text {
+    display: none;
+  }
+}
+
+.sb-buy-btn__hint {
+  font-size: 0.8rem;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.sb-buy-btn__form {
+  margin-left: 10px;
+}

@@ -1,0 +1,40 @@
+.sb-quantity-input__changer {
+  background: none;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  padding: 0px;
+  margin: 0px;
+  overflow: visible;
+  padding: 0;
+  appearance: button;
+  box-sizing: border-box;
+  outline: none;
+  border-radius: 0;
+  cursor: pointer;
+  color: #999999;
+
+  &::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+
+  &:hover, &:focus {
+    color: inherit;
+    background: inherit;
+  }
+}
+
+.sb-quantity-input__changer--minus {
+  padding-right: 10px;
+}
+
+.sb-quantity-input__changer--plus {
+  padding-left: 4px;
+}
+
+.sb-quantity-input__input {
+    width: 60px;
+    text-align: center;
+}

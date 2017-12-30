@@ -1,0 +1,165 @@
+.sb-product__headline {
+  margin: 0;
+  padding: 30px 0;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.sb-product__price {
+  font-size: 22px;
+  line-height: 40px;
+  min-height: 43px;
+}
+
+.sb-product__quantity {
+  flex: none;
+  margin: 0;
+  float: left;
+  padding-left: 25px;
+}
+
+.sb-product__quantity-input {
+  width: 60px;
+  max-width: 100%;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.sb-product__sku {
+  font-size: 1rem;
+  margin: 0;
+  color: #CCC;
+}
+
+.sb-product__name {
+  margin: 0;
+}
+
+.sb-product__buy {
+  padding-left: 20px;
+}
+
+.sb-product__image {
+  transition: transform 0.3s ease;
+}
+
+.sb-product__image-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: block;
+
+  &:hover, &:focus {
+    .sb-product__image-overlay {
+      opacity: 1;
+    }
+
+    .sb-product__image {
+      transform: scale(1.03);
+    }
+
+    .sb-product__icon {
+      opacity: 1;
+    }
+  }
+}
+
+.sb-product__image-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.05);
+  transition: opacity 0.3s ease-out;
+}
+
+.sb-product__icon {
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+}
+
+.sb-product {
+  .slider {
+    position: relative;
+    user-select: none;
+  }
+
+  .frame {
+    position: relative;
+    margin: 0 auto;
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+    white-space: nowrap;
+
+    li {
+      position: relative;
+      display: inline-block;
+      width: 100%;
+    }
+  }
+
+  .slides {
+    display: block;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .prev, .next {
+    color: rgba(50, 50, 50, 0.4);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+  .prev {
+    left: 20px;
+  }
+
+  .next {
+    right: 30px;
+  }
+}
+
+.uk-modal-dialog {
+  width: auto;
+  .sb-product-modal & {
+    padding: 0px;
+  }
+
+  @media(min-width: $sb-breakpoint-small) {
+      padding: 20px;
+  }
+
+  img {
+    width: auto;
+    height: auto;
+    max-width: 85vw;
+    max-height: 85vh;
+  }
+
+}
+
+.uk-lightbox {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.uk-lightbox-toolbar {
+  background: none;
+}
+
+.uk-lightbox-item > * {
+  max-height: 70vh;
+  max-width: 70vw;
+}
+
+.uk-lightbox-items > * > * {
+  max-height: 85vh;
+  max-width: 85vw;
+}

@@ -1,0 +1,9 @@
+.sb-minicart {
+  transition: transform 0.2s ease;
+  overflow-y: scroll;
+  z-index: 1999;
+  background: #FFF;
+  box-shadow: -9px 0px 20px 0px rgba(0,0,0,0.19);
+  box-sizing: border-box;
+  padding: 20px;
+}
