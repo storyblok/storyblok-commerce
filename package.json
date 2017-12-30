@@ -2,7 +2,7 @@
   "name": "storyblok-commerce",
   "version": "0.0.1",
   "description": "Storyblok Commerce",
-  "main": "index.js",
+  "main": "commerce/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
