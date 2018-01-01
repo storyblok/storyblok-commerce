@@ -16,8 +16,8 @@ export default function() {
     withCredentials: true,
     headers: {
       'Authorization': 'Token token=' + State.token,
-      'Locale': window.SITE_LANG,
-      'Currency': window.SITE_CURRENCY
+      'Locale': State.locale,
+      'Currency': State.currency
     }
   })
   return client
