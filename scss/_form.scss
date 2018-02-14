@@ -1,8 +1,8 @@
 $sb-form-padding-horizontal: 10px;
 $sb-form-background: #FFF;
 $sb-form-color: #000;
-$sb-form-height: 40px;
-$sb-form-border-color: #000;
+$sb-form-height: 44px;
+$sb-form-border-color: #c6c6c6;
 
 .sb-form {
 
@@ -38,6 +38,11 @@ $sb-form-border-color: #000;
   padding: 0 $sb-form-padding-horizontal;
   background: $sb-form-background;
   color: $sb-form-color;
+
+  &:focus {
+    outline: 0;
+    border-color: $brand-color;
+  }
 }
 
 .sb-form__input,
@@ -61,7 +66,7 @@ $sb-form-border-color: #000;
 }
 
 .sb-form__row {
-  margin-bottom: 1rem;
+  margin-bottom: 15px;
 }
 
 .sb-form__label {
@@ -69,6 +74,50 @@ $sb-form-border-color: #000;
   padding-bottom: 5px;
 }
 
+.sb-form__radio,
+.sb-form__checkbox {
+  margin-right: 5px;
+}
+
 .sb-form__radio-label {
   padding-right: 15px;
+}
+
+.sb-form__option-wrap {
+  border: 1px solid #CCC;
+  margin: 10px 0;
+  border-radius: 4px;
+  transition: box-shadow 150ms ease;
+
+  label {
+    cursor: pointer;
+    padding: 20px;
+    display: block;
+  }
+
+  &:hover {
+    box-shadow: 0 1px 10px 0 #cfd7df;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.sb-form__help {
+  float: right;
+  color: #c6c6c6;
+  display: none;
+
+  @media (min-width: 600px) {
+    display: block;
+  }
+}
+
+.sb-form__number-in-radio {
+  margin-left: 10px;
+}
+
+.sb-form__option-wrap-content {
+  padding: 0 20px 20px 20px;
 }

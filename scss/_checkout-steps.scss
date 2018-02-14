@@ -33,7 +33,13 @@
   }
 
   h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.3rem;
     line-height: 40px;
+  }
+
+  h3 {
+    margin: 0 0 10px 0;
   }
 }
 
@@ -43,10 +49,11 @@
   position: absolute;
   border-radius: 50%;
   border: 2px solid #CCC;
-  width: 36px;
+  width: 40px;
   text-align: center;
   line-height: 36px;
   font-weight: 600;
+  box-sizing: border-box;
   color: #CCC;
 }
 
@@ -65,4 +72,8 @@
   .sb-steps__overlay {
     display: none;
   }
+}
+
+.sb-steps__terms {
+  margin-top: 20px;
 }

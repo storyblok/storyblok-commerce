@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Example</title>
+  <style type="text/css">
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      text-align: center;
+      margin: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <button data-sb-buy-button="sku: tshirt; callback: myCallback; currency: EUR">
+      Add product to cart
+    </button>
+  </div>
+  <div data-sb-checkout="locale: de"></div>
+  <link rel="stylesheet" type="text/css" href="https://commerce.storyblok.com/f/styles.css">
+  <script src="https://commerce.storyblok.com/f/latest.js?t=EfFxEv57hp0SB4riYTYocwtt"></script>
+  <script type="text/javascript">
+    window.myCallback = function(data) {
+      // Redirect to checkout page or do stuff with the cart data
+      console.log(data)
+    }
+  </script>
+</body>
+</html>

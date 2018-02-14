@@ -1,12 +1,51 @@
+.sb-checkout {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px 50px 20px;
+}
+
 .sb-checkout__main {
-  width: 70%;
   box-sizing: border-box;
   padding-right: 30px;
+  width: 100%;
+
+  @media (min-width: $sb-breakpoint-medium) {
+    width: 70%;
+  }
 }
 
 .sb-checkout__sidebar {
-  width: 30%;
+  width: 100%;
+
+  @media (min-width: $sb-breakpoint-medium) {
+    width: 30%;
+  }
 }
 
+.sb-checkout__empty {
+  font-size: 0.9rem;
+  color: #CCC;
+  line-height: 40px;
+  text-decoration: none;
 
+  &:hover {
+    color: #000;
+  }
+}
 
+.sb-checkout__placeholder {
+  font-size: 1.2rem;
+  padding: 40px;
+  color: #000;
+  line-height: 40px;
+  text-decoration: none;
+  text-align: center;
+  border: 1px dotted #CCC;
+  border-radius: 5px;
+}
+
+.sb-checkout__headline {
+  margin: 0 0 10px 0;
+  font-size: 1.3rem;
+  line-height: 40px;
+}

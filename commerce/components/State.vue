@@ -3,12 +3,14 @@
 import Vue from 'vue'
 import api from '../libs/api'
 import store from '../libs/store'
+import locales from '../locales'
 
 let state = new Vue({
   data: function() {
     return {
       token: '',
       rootId: null,
+      urlPrefix: 'en-en',
       locale: 'en',
       currency: 'USD',
       country: 'at',
@@ -23,7 +25,8 @@ let state = new Vue({
       category: {title: '-'},
       resolvedEvents: {},
       productQuantity: 1,
-      variant: null
+      variant: null,
+      locales: locales
     }
   },
 

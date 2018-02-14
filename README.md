@@ -1,6 +1,6 @@
 # Ecommerce SPA built on top of Vuejs
 
-Status: Pre-Alpha. Get a demo on [www.storyblok.com/commerce](https://www.storyblok.com/commerce)
+Status: Alpha. Get a demo on [www.storyblok.com/commerce](https://www.storyblok.com/commerce)
 
 ## Requirements
 

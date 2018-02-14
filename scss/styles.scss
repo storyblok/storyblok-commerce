@@ -7,6 +7,9 @@ $sb-breakpoint-mini-max: ($sb-breakpoint-small - 1);
 $sb-breakpoint-small-max: ($sb-breakpoint-medium - 1);
 $sb-breakpoint-medium-max: ($sb-breakpoint-large - 1);
 $sb-breakpoint-large-max: ($sb-breakpoint-xlarge - 1);
+$sb-grid-gutter-horizontal: 20px;
+$sb-grid-gutter-vertical: 20px;
+$brand-color: #357F8A;
 
 @import '_flex.scss';
 @import '_grid.scss';
@@ -29,3 +32,8 @@ $sb-breakpoint-large-max: ($sb-breakpoint-xlarge - 1);
 @import '_filter-bar.scss';
 @import '_alert.scss';
 @import '_error-modal.scss';
+@import '_cart-item.scss';
+@import '_sums.scss';
+@import '_coupon.scss';
+@import '_stripe-element.scss';
+@import '_modal.scss';
