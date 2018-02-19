@@ -1,9 +1,13 @@
 /* eslint-disable */
-const PREFIX = '_storyblok_' + window.SITE_CURRENCY + '_'
+const PREFIX = '_storyblok_'
 
 export default {
   set(key, data) {
-    window.localStorage.setItem(PREFIX + key, data)
+    if (data === null) {
+      window.localStorage.removeItem(PREFIX + key)
+    } else {
+      window.localStorage.setItem(PREFIX + key, data)
+    }
   },
 
   get(key) {

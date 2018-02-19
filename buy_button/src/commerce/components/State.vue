@@ -43,7 +43,7 @@ let state = new Vue({
     loadCheckout() {
       let uuid = store.get('uuid')
 
-      if (uuid !== null && uuid !== '') {
+      if (uuid !== false && uuid !== null && uuid !== '') {
         this.checkoutLoading = true
 
         api().get(`checkouts/${uuid}`)
